@@ -11,9 +11,9 @@
         }
         .chat-container {
             max-width: 400px;
-            margin: 0 auto;
             border: 1px solid #ccc;
             padding: 10px;
+            margin: 20px auto 0;
         }
         .message {
             background-color: blue;
@@ -47,7 +47,6 @@
 <body>
 <div class="chat-container">
     <div id="message">
-
     </div>
     <input id="msg" type="text" placeholder="Tapez votre msg">
     <button id="submitButton">Envoyer</button>

@@ -20,11 +20,13 @@
             color: lime;
             padding: 20px;
             border-radius: 5px;
+            text-align: center;
         }
 
         .command {
             position: relative;
             overflow: hidden;
+            margin-bottom: 20px; /* Espace entre le texte et le lien */
         }
 
         .command::after {
@@ -43,12 +45,30 @@
         .command:hover::after {
             transform: scaleX(1);
         }
+
+        /* Style du lien-bouton */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #1e87d7;
+        }
     </style>
     <title>Chat</title>
 </head>
 <body>
 <div class="terminal">
     <div class="command">C-H-A-T-L-I-V-E</div>
+    <a href="{{ route('chat.index') }}" class="button-link">Testez le chat</a>
 </div>
 </body>
 </html>
+
